@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Отели в Седоне штат Аризона</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -21,8 +22,7 @@
   </header>
 
   <main>
-    <!-- Заголовок будет скрыт -->
-    <h1>Седона Sedona</h1>
+    <h1 class="visually-hidden">Седона Sedona</h1>
     <div><img src="img/fest-page/welcome.svg" width="460" height="353" alt="Баннер"></div>
 
     <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -32,31 +32,31 @@
       <h3>Настоящий городок</h3>
       <p>- №1 -</p>
       <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>   
-      <img src="img/fest-page/gorodok.jpg" width="800" height="256" alt="Настоящий городок">
+      <img src="img/fest-page/town.jpg" width="800" height="256" alt="Настоящий городок">
     </section>
 
     <section>   
       <ul>
         <li>
-          <img src="img/icon-domik.svg" width="75" height="72" alt="Иконка домик">
+          <img src="img/icon-house.svg" width="75" height="72" alt="Иконка домик">
           <h3>Жилье</h3>
           <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
         </li>
         <li>
-          <img src="img/icon-jeda.svg" width="75" height="72" alt="Иконка еда">
+          <img src="img/icon-food.svg" width="75" height="72" alt="Иконка еда">
           <h3>Еда</h3>
           <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </li>
         <li>
-          <img src="img/icon-suveniri.svg" width="75" height="72" alt="Иконка сувениры">
+          <img src="img/icon-souvenirs.svg" width="75" height="72" alt="Иконка сувениры">
           <h3>Сувениры</h3>
-          <p>Не тоько китайского, но и местного производства!</p>
+          <p>Не только китайского, но и местного производства!</p>
         </li>
       </ul>
     </section>
     
     <section>   
-      <img src="img/fest-page/chertov-most.jpg" width="800" height="256" alt="Мост дьявола">
+      <img src="img/fest-page/devils-bridge.jpg" width="800" height="256" alt="Мост дьявола">
       <h3>Там есть мост дьявола</h3>
       <p>- №2 -</p>
       <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -83,12 +83,38 @@
     </section>
     
     <section>
-     <h2>Заинтересовались?</h2>
-     <p>Укажите предполагаемые даты поездки,<br>
+      <h2>Заинтересовались?</h2>
+      <p>Укажите предполагаемые даты поездки,<br>
         и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <button type="button">Поиск гостиницы в Седоне</button>
-      <!-- TODO: вставить карту -->
     </section>
+
+    <section> 
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="check-in-date">Дата заезда:</label>
+          <input id="check-in-date" type="date" name="check-in-date"> 
+        </p>
+        <p>
+          <label for="check-out-date">Дата выезда:</label>
+          <input id="check-out-date" type="date" name="check-out-date"> 
+        </p>
+        <p>
+          <label for="adult">Взрослые:</label>
+          <input id="adult" type="number" min="1" name="adult" placeholder="Введите число"> 
+        </p>
+        <p>
+          <label for="child">Дети:</label>
+          <input id="child" type="number" min="0" name="child" placeholder="Введите число">
+        </p> 
+        <p>         
+          <button type="submit">Найти</button>        
+        </p>
+      </form>
+    </section>
+
+    <!-- TODO: вставить карту -->
+    
   </main>
 
   <footer>
