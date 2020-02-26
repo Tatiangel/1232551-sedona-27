@@ -1,0 +1,22 @@
+.menu li {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.menu li.active {
+  color: #766357;
+}
+
+.menu li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  color: #81b3d2;
+}
+
+.menu li a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
